@@ -13,7 +13,9 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import lombok.Getter;
 
+@Getter
 @Entity
 public class LectureSchedule extends BaseTimeEntity {
 
