@@ -13,8 +13,7 @@ INSERT INTO `lecture` (`id`,`name`, `quota`, `instructor_id`) VALUES
 (3, 'Lecture 3', 30, 3),
 (4, 'Lecture 4', 30, 4),
 (5, 'Lecture 5', 30, 5),
-(6, 'Lecture 6', 30, 1),
-(7, 'Lecture 7', 30, 2);
+(6, 'Lecture 6', 30, 1);
 
 -- lecture_schedule
 INSERT INTO `lecture_schedule` (`id`, `lecture_id`, `scheduled_at`) VALUES
@@ -83,3 +82,57 @@ INSERT INTO `lecture_schedule` (`id`, `lecture_id`, `scheduled_at`) VALUES
 (58, 6, '2024-12-30 16:00:00'),
 (59, 6, '2024-12-30 17:00:00'),
 (60, 6, '2024-12-30 18:00:00');
+
+-- t_user
+INSERT INTO `t_user` (`id`, `name`)
+VALUES
+(1, 'User1'),
+(2, 'User2'),
+(3, 'User3'),
+(4, 'User4'),
+(5, 'User5'),
+(6, 'User6'),
+(7, 'User7'),
+(8, 'User8'),
+(9, 'User9'),
+(10, 'User10'),
+(11, 'User11'),
+(12, 'User12'),
+(13, 'User13'),
+(14, 'User14'),
+(15, 'User15'),
+(16, 'User16'),
+(17, 'User17'),
+(18, 'User18'),
+(19, 'User19'),
+(20, 'User20'),
+(21, 'User21'),
+(22, 'User22'),
+(23, 'User23'),
+(24, 'User24'),
+(25, 'User25'),
+(26, 'User26'),
+(27, 'User27'),
+(28, 'User28'),
+(29, 'User29'),
+(30, 'User30'),
+(31, 'User31'),
+(32, 'User32'),
+(33, 'User33'),
+(34, 'User34'),
+(35, 'User35'),
+(36, 'User36'),
+(37, 'User37'),
+(38, 'User38'),
+(39, 'User39'),
+(40, 'User40');
+
+-- lecture_enrollment
+INSERT INTO `lecture_enrollment` (`id`, `lecture_id`, `lecture_schedule_id`, `user_id`)
+VALUES
+(1, 1, 1, 1),
+(2, 2, 12, 1),
+(3, 3, 23, 1),
+(4, 4, 34, 2),
+(5, 5, 45, 2),
+(6, 6, 56, 2);
